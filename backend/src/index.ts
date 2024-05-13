@@ -9,6 +9,7 @@ import path from "path";
 import { v2 as cloudinary } from "cloudinary";
 import myHotelRoutes from "./routes/my-hotels";
 import hotelRoutes from "../src/routes/hotels";
+import bookingRoutes from "./routes/my-bookings";
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -36,6 +37,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/my-hotels", myHotelRoutes);
 app.use("/api/hotels", hotelRoutes);
+app.use("/api/my-bookings", bookingRoutes);
 
 // app.get("/api/test", async (req: Request, res: Response) => {
 //   res.json({ message: "hello from express endpoint!" });

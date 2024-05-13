@@ -21,7 +21,7 @@ const EditHotel = () => {
       showToast({ message: "Hotel Saved!", type: "SUCCESS" });
     },
     onError: () => {
-      showToast({ message: "Error ehilr saving Hotel", type: "ERROR" });
+      showToast({ message: "Error while saving Hotel", type: "ERROR" });
     },
   });
 
